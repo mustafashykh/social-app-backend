@@ -1,4 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import router from './router';
+import DefaultPage from './pages/default.vue';
 
-createApp(App).mount('#app')
+// App
+const app = createApp(DefaultPage)
+
+// MiddleWares
+app.use(router)
+
+// Mounting the app
+app.mount('#app')
+
