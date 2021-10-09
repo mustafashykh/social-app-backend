@@ -16,10 +16,17 @@
 <script>
 import TheHeader from '../components/TheHeader.vue';
 import Post from '../components/Post.vue';
+import { common } from '../shared/constants';
+import { onMounted } from '@vue/runtime-core';
 
 export default {
   components: { TheHeader, Post },
   name: 'App',
+  setup() {
+    onMounted(() => {
+      document.title = `${common.APP_NAME}`
+    })
+  }
 }
 </script>
 
