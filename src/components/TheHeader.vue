@@ -4,18 +4,29 @@
       <a-menu
         theme="dark"
         mode="horizontal"
-        v-model:selectedKeys="selectedKeys1"
+        :selectedKeys="[]"
         class="menu"
       >
-        <a-menu-item key="Login">Login</a-menu-item>
-        <a-menu-item key="Signup">Sign Up</a-menu-item>
+        <a-menu-item key="Login">
+          <router-link :to="{ name: routes.LOGIN }">Login</router-link>
+        </a-menu-item>
+        <a-menu-item key="Signup">
+          <router-link :to="{ name: routes.SIGNUP }">Sign Up</router-link>
+        </a-menu-item>
       </a-menu>
     </a-layout-header>
 </template>
 
 <script>
+import { routes } from '../shared/constants';
+
 export default {
-  name: 'TheHeader'
+  name: 'TheHeader',
+  data() {
+    return {
+      routes
+    }
+  }
 }
 </script>
 

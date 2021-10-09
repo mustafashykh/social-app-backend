@@ -1,9 +1,10 @@
-import Home from './pages/Home.vue';
-import Page404 from './pages/404.vue';
+import { Home, Page404, Login, SignUp } from './pages';
 import { createWebHistory, createRouter } from 'vue-router';
 
 const routes = [
-  { path: '/', component: Home },
+  { name: 'home', path: '/', component: Home },
+  { name: 'signup', path: '/signup', component: SignUp },
+  { name: 'login', path: '/login', component: Login },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: Page404 },
 ];
 

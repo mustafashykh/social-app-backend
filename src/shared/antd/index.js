@@ -1,4 +1,4 @@
-import { Layout, Menu, Comment, Avatar, Card } from "ant-design-vue";
+import { Layout, Menu, Comment, Avatar, Card, Tooltip } from "ant-design-vue";
 
 export default (app) => {
   app.use(Layout)
@@ -6,4 +6,5 @@ export default (app) => {
   app.use(Comment)
   app.use(Avatar)
   app.use(Card)
+  app.use(Tooltip)
 }

@@ -27,10 +27,11 @@ export default {
 @import "../shared/scss/variables.scss";
 .layout {
   background: $bg-body;
+  overflow: auto;
 }
 
 .site-layout-content {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 24px;
   background: $bg-body;
   border-left: 0.5px solid $border-color;
