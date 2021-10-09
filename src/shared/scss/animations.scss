@@ -1,35 +1,37 @@
-@keyframes heightAnimation {
-  0% {
-    top: 50vh;
-    height: 0px;
-    padding: 0;
-  }
- 
-  20% {
-    top: 50vh;
-    height: 1px;
-    padding: 0;
-  }
- 
-  40% {
-    top: 50vh;
-    height: 0px;
-    padding: 0;
-  }
-
-  60% {
-    top: 50vh;
-    height: 1px;
-    padding: 0;
-  }
-
-  80% {
-    top: 50vh;
-    height: 0px;
-    padding: 0;
-  }
- 
-  100% {
-    height: 300px;
+@mixin heightAnimation($name, $height) {
+  @keyframes #{$name} {
+    0% {
+      top: 50vh;
+      height: 0px;
+      padding: 0;
+    }
+   
+    20% {
+      top: 50vh;
+      height: 1px;
+      padding: 0;
+    }
+   
+    40% {
+      top: 50vh;
+      height: 0px;
+      padding: 0;
+    }
+  
+    60% {
+      top: 50vh;
+      height: 1px;
+      padding: 0;
+    }
+  
+    80% {
+      top: 50vh;
+      height: 0px;
+      padding: 0;
+    }
+   
+    100% {
+      height: $height;
+    }
   }
 }

@@ -18,6 +18,7 @@ app.use(router)
 // Registerign Antd components
 Antd(app);
 
+
 // Mounting the app
 app.mount('#app')
 

@@ -33,12 +33,6 @@
     </template>
   </a-comment>
   <comment v-if="showComment"/>
-  <comment v-if="showComment"/>
-  <comment v-if="showComment"/>
-  <comment v-if="showComment"/>
-  <comment v-if="showComment"/>
-  <comment v-if="showComment"/>
-  <comment v-if="showComment"/>
 </template>
 
 <script>
@@ -51,7 +45,7 @@ export default {
   name: "Post",
   data() {
     return {
-      showComment: true
+      showComment: false
     }
   },
 
