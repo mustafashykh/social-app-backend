@@ -37,11 +37,12 @@ export default {
 .header {
   height: 64.5px;
   text-align: center;
-  background: #001529;
+  background: $bg-body;
   border-bottom: 0.5px solid $border-color;
 }
 
 .menu {
+  background: $bg-body !important;
   line-height: 64px; 
   justify-content: center;
 }

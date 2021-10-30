@@ -35,3 +35,17 @@
     }
   }
 }
+
+@mixin colorChange($name, $from, $to) {
+  @keyframes #{$name} {
+    0% {
+      background-color: $from;
+    }
+    50% {
+      background-image: linear-gradient($from, $to);
+    }
+    100% {
+      background-color: $to;
+    }
+  }
+}
